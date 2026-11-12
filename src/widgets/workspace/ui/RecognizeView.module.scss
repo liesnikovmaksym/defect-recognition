@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+.generator {
+  border-top: 1px solid var(--border);
+  padding-top: $gap-sm;
+
+  summary {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: $gap-sm;
+  }
+}

@@ -1,0 +1,43 @@
+@use 'mixins' as *;
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  padding: 24px;
+  background: rgb(0 0 0 / 88%);
+  cursor: zoom-out;
+}
+
+.image {
+  max-width: 100%;
+  max-height: calc(100vh - 96px);
+  object-fit: contain;
+  cursor: default;
+  background: repeating-conic-gradient(#2a2a2a 0% 25%, #3a3a3a 0% 50%) 50% / 20px 20px;
+}
+
+.caption {
+  margin-top: 12px;
+  color: #e6e9f2;
+  font-size: 0.9rem;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 14%);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  @include focus-ring;
+}

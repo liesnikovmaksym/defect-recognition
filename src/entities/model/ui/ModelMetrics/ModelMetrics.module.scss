@@ -1,0 +1,61 @@
+﻿@use 'variables' as *;
+
+.root {
+  display: grid;
+  gap: $gap-sm;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $gap-sm;
+  text-align: center;
+
+  > div {
+    display: grid;
+    padding: 12px;
+    border-radius: $radius-sm;
+    background: var(--surface-2);
+  }
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.caption,
+.note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: center;
+
+  caption {
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding-bottom: 4px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid var(--border);
+  }
+
+  td {
+    font-family: var(--font-mono);
+  }
+
+  th {
+    background: var(--surface-2);
+    font-weight: 500;
+  }
+}

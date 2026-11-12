@@ -1,0 +1,47 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-sm;
+  min-height: 36px;
+  padding: 8px 16px;
+  border-radius: $radius-sm;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  transition:
+    background-color 150ms var(--ease),
+    border-color 150ms var(--ease),
+    transform 150ms var(--ease);
+  @include focus-ring;
+
+  &:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--accent-text);
+
+  &:hover:not(:disabled) {
+    background: var(--accent-hover);
+  }
+}
+
+.secondary {
+  background: var(--surface-2);
+  border-color: var(--border);
+
+  &:hover:not(:disabled) {
+    border-color: var(--border-strong);
+  }
+}

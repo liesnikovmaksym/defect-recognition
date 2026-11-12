@@ -1,0 +1,10 @@
+@use 'variables' as *;
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: $gap-lg $gap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: $gap-lg;
+}

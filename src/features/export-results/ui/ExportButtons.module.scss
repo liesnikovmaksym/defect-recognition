@@ -1,0 +1,16 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.row {
+  display: flex;
+  gap: $gap-sm;
+  width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.button {
+  flex: 1;
+}

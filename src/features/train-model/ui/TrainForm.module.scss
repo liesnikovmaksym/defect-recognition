@@ -1,0 +1,88 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.root {
+  display: grid;
+  gap: $gap;
+}
+
+.fieldset {
+  margin: 0;
+  padding: $gap-sm $gap;
+  display: grid;
+  gap: $gap-sm;
+  border: 1px solid var(--border);
+  border-radius: $radius;
+  min-width: 0;
+
+  legend {
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  &:disabled {
+    opacity: 0.65;
+  }
+}
+
+.groups {
+  display: grid;
+  gap: 4px;
+  padding-left: $gap;
+}
+
+.shapes {
+  display: grid;
+  gap: 8px;
+}
+
+.shapesLabel {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.shapeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap-sm;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.summary {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.warn {
+  color: var(--warn);
+}
+
+.bars {
+  display: grid;
+  gap: $gap-sm;
+}
+
+.timer {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+
+  strong {
+    color: var(--text);
+    font-family: var(--font-mono);
+  }
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.9rem;
+}

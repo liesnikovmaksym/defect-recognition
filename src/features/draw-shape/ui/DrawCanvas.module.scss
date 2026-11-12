@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.root {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: $gap-sm;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: $radius;
+  border: 1px solid var(--border);
+  background: #000;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: $gap-sm;
+
+  > button {
+    flex: 1;
+  }
+}
+
+.group {
+  display: flex;
+  gap: $gap-sm;
+}
+
+.on {
+  border-color: var(--accent-ink);
+  color: var(--accent-ink);
+}
+
+.slider {
+  display: grid;
+  flex: 1;
+  gap: 2px;
+  min-width: 160px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+
+  input {
+    width: 100%;
+  }
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

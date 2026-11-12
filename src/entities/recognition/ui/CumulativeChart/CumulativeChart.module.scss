@@ -1,0 +1,14 @@
+.figure {
+  margin: 0;
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: var(--surface-2);
+
+  figcaption {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+}

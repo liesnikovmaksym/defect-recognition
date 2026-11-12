@@ -1,0 +1,41 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.card {
+  @include card;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: $gap-sm;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+}
+
+.step {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 0.85rem;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}

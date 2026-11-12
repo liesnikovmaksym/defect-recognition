@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+.root {
+  display: grid;
+  gap: $gap-sm;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.9rem;
+}

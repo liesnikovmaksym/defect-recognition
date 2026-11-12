@@ -1,0 +1,35 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.root {
+  position: relative;
+}
+
+.trigger {
+  display: inline-flex;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-2);
+  border-radius: 50%;
+  cursor: pointer;
+  @include focus-ring;
+
+  &:disabled {
+    color: var(--text-muted);
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 10;
+  min-width: 260px;
+  padding: $gap;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: $radius;
+}

@@ -1,0 +1,44 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-sm;
+  min-height: 340px;
+  padding: $gap-lg;
+  text-align: center;
+  cursor: pointer;
+  border: 2px dashed var(--border);
+  border-radius: $radius;
+  background: var(--surface-2);
+  transition:
+    border-color 150ms var(--ease),
+    background-color 150ms var(--ease);
+  @include focus-ring;
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.dragging {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.title {
+  font-size: 1.1rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.error {
+  font-size: 0.85rem;
+  color: var(--danger);
+}

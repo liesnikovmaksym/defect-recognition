@@ -1,0 +1,79 @@
+﻿@use 'variables' as *;
+@use 'mixins' as *;
+
+.drawer {
+  position: fixed;
+  top: var(--navbar-h, 0);
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: $gap-sm;
+  max-width: 100vw;
+  padding: $gap;
+  background: var(--surface);
+  border-left: 1px solid var(--border-strong);
+  transform: translateX(105%);
+  visibility: hidden;
+  transition:
+    transform 240ms var(--ease),
+    visibility 240ms;
+
+  @include mobile {
+    top: 0;
+  }
+}
+
+.open {
+  transform: none;
+  visibility: visible;
+}
+
+.resizing {
+  user-select: none;
+  transition: none;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -4px;
+  width: 8px;
+  cursor: ew-resize;
+  touch-action: none;
+  @include focus-ring;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 4px;
+    height: 48px;
+    border-radius: 2px;
+    background: var(--border);
+    transform: translateY(-50%);
+    transition: background-color 150ms var(--ease);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    background: var(--accent);
+  }
+}
+
+.resizing .handle::after {
+  background: var(--accent);
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-sm;
+}
+
+.close {
+  margin-left: auto;
+}

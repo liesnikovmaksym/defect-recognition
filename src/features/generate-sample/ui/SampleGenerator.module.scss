@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.root {
+  display: grid;
+  gap: $gap-sm;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap-sm;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.time {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+

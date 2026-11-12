@@ -1,0 +1,113 @@
+﻿@use 'variables' as *;
+
+.root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  user-select: none;
+
+  &:has(.input:disabled) {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+}
+
+.input {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.icon {
+  flex: none;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.frame {
+  fill: var(--surface);
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+  transition:
+    fill 150ms var(--ease),
+    stroke 150ms var(--ease);
+}
+
+.tick,
+.dash {
+  fill: none;
+  stroke: var(--accent-text);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: opacity 120ms var(--ease);
+}
+
+.root:hover .input:not(:disabled) ~ .icon .frame {
+  stroke: var(--accent);
+}
+
+.input:focus-visible ~ .icon {
+  outline: 2px solid var(--accent-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.input:checked ~ .icon .frame,
+.input:indeterminate ~ .icon .frame {
+  fill: var(--accent);
+  stroke: var(--accent);
+}
+
+.input:checked ~ .icon .tick,
+.input:indeterminate ~ .icon .dash {
+  opacity: 1;
+}
+
+.input:indeterminate ~ .icon .tick {
+  opacity: 0;
+}
+
+.chip {
+  padding: 4px 12px 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: $radius-sm;
+  background: var(--surface);
+  transition:
+    background-color 150ms var(--ease),
+    border-color 150ms var(--ease);
+
+  &:hover:not(:has(.input:disabled)) {
+    border-color: var(--accent);
+  }
+
+  &:has(.input:checked) {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+    font-weight: 500;
+  }
+
+  &:has(.input:focus-visible) {
+    outline: 2px solid var(--accent-ink);
+    outline-offset: 2px;
+  }
+
+  .input:focus-visible ~ .icon {
+    outline: none;
+  }
+
+  .input {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

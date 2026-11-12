@@ -1,0 +1,67 @@
+﻿@use 'variables' as *;
+
+.card {
+  display: grid;
+  gap: $gap-sm;
+  padding: 20px;
+  border-radius: $radius;
+  border: 1px solid var(--border);
+}
+
+.good {
+  border-color: color-mix(in srgb, var(--ok) 45%, var(--border));
+}
+
+.bad {
+  border-color: color-mix(in srgb, var(--danger) 45%, var(--border));
+}
+
+.verdict {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.good .verdict {
+  color: var(--ok);
+}
+
+.bad .verdict {
+  color: var(--danger);
+}
+
+.confidence,
+.timing {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.scores {
+  display: grid;
+  gap: 8px;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: 96px 1fr 56px;
+  align-items: center;
+  gap: $gap-sm;
+  font-size: 0.85rem;
+
+  span:last-child {
+    font-family: var(--font-mono);
+    text-align: right;
+  }
+}
+
+.bar {
+  height: 8px;
+  border-radius: 2px;
+  background: var(--surface-2);
+  overflow: hidden;
+
+  div {
+    height: 100%;
+    background: var(--accent);
+  }
+}

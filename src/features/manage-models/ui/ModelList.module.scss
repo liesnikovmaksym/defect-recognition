@@ -1,0 +1,65 @@
+﻿@use 'variables' as *;
+
+.root {
+  display: grid;
+  gap: $gap-sm;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: $gap-sm;
+}
+
+.item {
+  display: grid;
+  gap: 4px;
+  padding: $gap-sm $gap;
+  border: 1px solid var(--border);
+  border-radius: $radius;
+  background: var(--surface-2);
+}
+
+.active {
+  border-color: var(--accent);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: $gap-sm;
+  flex-wrap: wrap;
+}
+
+.name {
+  word-break: break-word;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border-radius: $radius-sm;
+  border: 1px solid var(--accent);
+  background: var(--surface);
+}
+
+.badge {
+  color: var(--accent-ink);
+  font-size: 0.8rem;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap-sm;
+  margin-top: 4px;
+}

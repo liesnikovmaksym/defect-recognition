@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: $gap-sm;
+}
+
+.save {
+  flex: 1;
+}
+
+.error {
+  flex-basis: 100%;
+  color: var(--danger);
+  font-size: 0.9rem;
+}
