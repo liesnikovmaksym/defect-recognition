@@ -1,0 +1,9 @@
+configuration;shapes;reference;internalAccuracy;on_circle;on_ellipse;on_square;on_rectangle;on_triangle;on_hexagon
+коло;1;circle;0.9833;0.9917;0.5;0.5;0.5;0.5;0.5
+коло + квадрат;2;circle;0.9333;0.9;0.6417;0.9083;0.5167;0.5167;0.525
+усі 6 фігур;6;circle;0.8722;0.8833;0.8083;0.8583;0.7583;0.7;0.9
+окрема модель: ellipse;1;ellipse;0.9944;0.5;1;0.5;0.5;0.7667;0.5
+окрема модель: square;1;square;0.9944;0.5;0.5;0.9917;0.5;0.5;0.5
+окрема модель: rectangle;1;rectangle;1;0.9667;0.5;0.5;1;0.5;0.7917
+окрема модель: triangle;1;triangle;1;0.5;0.5;0.5;0.5;1;0.5
+окрема модель: hexagon;1;hexagon;1;0.5;0.5;0.5;0.5;0.5;1

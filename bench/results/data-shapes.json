@@ -1,0 +1,98 @@
+[
+  {
+    "configuration": "коло",
+    "shapes": 1,
+    "reference": "circle",
+    "internalAccuracy": 0.9833333333333333,
+    "on_circle": 0.9916666666666667,
+    "on_ellipse": 0.5,
+    "on_square": 0.5,
+    "on_rectangle": 0.5,
+    "on_triangle": 0.5,
+    "on_hexagon": 0.5
+  },
+  {
+    "configuration": "коло + квадрат",
+    "shapes": 2,
+    "reference": "circle",
+    "internalAccuracy": 0.9333333333333332,
+    "on_circle": 0.9,
+    "on_ellipse": 0.6416666666666666,
+    "on_square": 0.9083333333333332,
+    "on_rectangle": 0.5166666666666667,
+    "on_triangle": 0.5166666666666667,
+    "on_hexagon": 0.525
+  },
+  {
+    "configuration": "усі 6 фігур",
+    "shapes": 6,
+    "reference": "circle",
+    "internalAccuracy": 0.8722222222222222,
+    "on_circle": 0.8833333333333333,
+    "on_ellipse": 0.8083333333333332,
+    "on_square": 0.8583333333333334,
+    "on_rectangle": 0.7583333333333334,
+    "on_triangle": 0.7000000000000001,
+    "on_hexagon": 0.9
+  },
+  {
+    "configuration": "окрема модель: ellipse",
+    "shapes": 1,
+    "reference": "ellipse",
+    "internalAccuracy": 0.9944444444444445,
+    "on_circle": 0.5,
+    "on_ellipse": 1,
+    "on_square": 0.5,
+    "on_rectangle": 0.5,
+    "on_triangle": 0.7666666666666666,
+    "on_hexagon": 0.5
+  },
+  {
+    "configuration": "окрема модель: square",
+    "shapes": 1,
+    "reference": "square",
+    "internalAccuracy": 0.9944444444444445,
+    "on_circle": 0.5,
+    "on_ellipse": 0.5,
+    "on_square": 0.9916666666666667,
+    "on_rectangle": 0.5,
+    "on_triangle": 0.5,
+    "on_hexagon": 0.5
+  },
+  {
+    "configuration": "окрема модель: rectangle",
+    "shapes": 1,
+    "reference": "rectangle",
+    "internalAccuracy": 1,
+    "on_circle": 0.9666666666666667,
+    "on_ellipse": 0.5,
+    "on_square": 0.5,
+    "on_rectangle": 1,
+    "on_triangle": 0.5,
+    "on_hexagon": 0.7916666666666666
+  },
+  {
+    "configuration": "окрема модель: triangle",
+    "shapes": 1,
+    "reference": "triangle",
+    "internalAccuracy": 1,
+    "on_circle": 0.5,
+    "on_ellipse": 0.5,
+    "on_square": 0.5,
+    "on_rectangle": 0.5,
+    "on_triangle": 1,
+    "on_hexagon": 0.5
+  },
+  {
+    "configuration": "окрема модель: hexagon",
+    "shapes": 1,
+    "reference": "hexagon",
+    "internalAccuracy": 1,
+    "on_circle": 0.5,
+    "on_ellipse": 0.5,
+    "on_square": 0.5,
+    "on_rectangle": 0.5,
+    "on_triangle": 0.5,
+    "on_hexagon": 1
+  }
+]

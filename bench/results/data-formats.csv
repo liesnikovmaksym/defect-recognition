@@ -1,0 +1,5 @@
+trainedOn;internalAccuracy;testOnPng;testOnJpg;testOnBmp
+тільки PNG;0.9981;1;1;1
+тільки JPG;0.9981;1;1;1
+тільки BMP;0.9981;1;1;1
+змішані;0.9981;1;1;1

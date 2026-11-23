@@ -1,0 +1,128 @@
+[
+  {
+    "size": 16,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 16,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 16,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 32,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 32,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 32,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 64,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 64,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 64,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 1,
+    "detected": 1
+  },
+  {
+    "size": 128,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 128,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 128,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 256,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 256,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 256,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 1024,
+    "format": "png",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 1024,
+    "format": "jpg",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  },
+  {
+    "size": 1024,
+    "format": "bmp",
+    "n": 40,
+    "falsePositive": 0,
+    "detected": 1
+  }
+]

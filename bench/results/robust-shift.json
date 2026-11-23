@@ -1,0 +1,47 @@
+[
+  {
+    "shift": 0,
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shift": 0.005,
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shift": 0.01,
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shift": 0.02,
+    "n": 40,
+    "falsePositive": 0.025
+  },
+  {
+    "shift": 0.03,
+    "n": 40,
+    "falsePositive": 0.1
+  },
+  {
+    "shift": 0.05,
+    "n": 40,
+    "falsePositive": 0.1
+  },
+  {
+    "shift": 0.08,
+    "n": 40,
+    "falsePositive": 0.575
+  },
+  {
+    "shift": 0.12,
+    "n": 40,
+    "falsePositive": 0.925
+  },
+  {
+    "shift": 0.2,
+    "n": 40,
+    "falsePositive": 1
+  }
+]

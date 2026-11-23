@@ -1,0 +1,30 @@
+[
+  {
+    "trainedOn": "тільки PNG",
+    "internalAccuracy": 0.9981481481481481,
+    "testOnPng": 1,
+    "testOnJpg": 1,
+    "testOnBmp": 1
+  },
+  {
+    "trainedOn": "тільки JPG",
+    "internalAccuracy": 0.9981481481481481,
+    "testOnPng": 1,
+    "testOnJpg": 1,
+    "testOnBmp": 1
+  },
+  {
+    "trainedOn": "тільки BMP",
+    "internalAccuracy": 0.9981481481481481,
+    "testOnPng": 1,
+    "testOnJpg": 1,
+    "testOnBmp": 1
+  },
+  {
+    "trainedOn": "змішані",
+    "internalAccuracy": 0.9981481481481481,
+    "testOnPng": 1,
+    "testOnJpg": 1,
+    "testOnBmp": 1
+  }
+]

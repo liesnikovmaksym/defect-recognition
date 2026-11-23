@@ -1,0 +1,34 @@
+[
+  {
+    "trainedOn": "тільки Іконки 32×32",
+    "internalAccuracy": 0.9944444444444445,
+    "trainMs": 94.56666666766007,
+    "testOn32": 1,
+    "testOn128": 0.5,
+    "testOn1024": 0.5
+  },
+  {
+    "trainedOn": "тільки Стандартні 128×128",
+    "internalAccuracy": 0.9962962962962963,
+    "trainMs": 29.899999996026356,
+    "testOn32": 0.5,
+    "testOn128": 1,
+    "testOn1024": 0.6666666666666666
+  },
+  {
+    "trainedOn": "тільки Якісні 1024×1024",
+    "internalAccuracy": 0.9962962962962963,
+    "trainMs": 213.16666666666666,
+    "testOn32": 0.5,
+    "testOn128": 1,
+    "testOn1024": 1
+  },
+  {
+    "trainedOn": "усі три групи",
+    "internalAccuracy": 0.9981481481481481,
+    "trainMs": 1710.500000004967,
+    "testOn32": 0.9916666666666667,
+    "testOn128": 1,
+    "testOn1024": 1
+  }
+]

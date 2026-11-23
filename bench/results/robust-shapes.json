@@ -1,0 +1,32 @@
+[
+  {
+    "shape": "circle",
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shape": "ellipse",
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shape": "square",
+    "n": 40,
+    "falsePositive": 1
+  },
+  {
+    "shape": "rectangle",
+    "n": 40,
+    "falsePositive": 1
+  },
+  {
+    "shape": "triangle",
+    "n": 40,
+    "falsePositive": 0
+  },
+  {
+    "shape": "hexagon",
+    "n": 40,
+    "falsePositive": 0
+  }
+]

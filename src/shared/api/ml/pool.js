@@ -53,7 +53,7 @@ function chunked(items, size) {
   return out;
 }
 
-export async function prepareDataset(tasks, { workers, onProgress }) {
+export async function prepareDataset(tasks, { workers, onProgress, chunkSize = CHUNK_SIZE }) {
   const results = [];
   let done = 0;
   const report = (count) => {
@@ -62,14 +62,14 @@ export async function prepareDataset(tasks, { workers, onProgress }) {
   };
 
   if (workers === 0) {
-    for (const part of chunked(tasks, CHUNK_SIZE)) {
+    for (const part of chunked(tasks, chunkSize)) {
       for (const task of part) results.push(await prepareSample(task));
       report(part.length);
       await yieldToUi();
     }
   } else {
     await ensurePool(workers);
-    const queue = chunked(tasks, CHUNK_SIZE);
+    const queue = chunked(tasks, chunkSize);
     let next = 0;
     await Promise.all(
       pool.slice(0, workers).map(async (worker) => {

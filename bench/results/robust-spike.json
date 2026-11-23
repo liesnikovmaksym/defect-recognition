@@ -1,0 +1,128 @@
+[
+  {
+    "spikeLength": 0.005,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.05305164769729844,
+    "n": 60,
+    "detected": 0.5666666666666667
+  },
+  {
+    "spikeLength": 0.01,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.10610329539459688,
+    "n": 60,
+    "detected": 0.7
+  },
+  {
+    "spikeLength": 0.015,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.15915494309189535,
+    "n": 60,
+    "detected": 0.8
+  },
+  {
+    "spikeLength": 0.02,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.21220659078919377,
+    "n": 60,
+    "detected": 0.95
+  },
+  {
+    "spikeLength": 0.03,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.3183098861837907,
+    "n": 60,
+    "detected": 0.9666666666666667
+  },
+  {
+    "spikeLength": 0.04,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.42441318157838753,
+    "n": 60,
+    "detected": 0.9833333333333333
+  },
+  {
+    "spikeLength": 0.06,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.6366197723675814,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.08,
+    "spikeWidth": 0.03,
+    "areaPercent": 0.8488263631567751,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.12,
+    "spikeWidth": 0.03,
+    "areaPercent": 1.2732395447351628,
+    "n": 60,
+    "detected": 0.9833333333333333
+  },
+  {
+    "spikeLength": 0.005,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.08841941282883074,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.01,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.17683882565766149,
+    "n": 60,
+    "detected": 0.85
+  },
+  {
+    "spikeLength": 0.015,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.2652582384864922,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.02,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.35367765131532297,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.03,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.5305164769729844,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.04,
+    "spikeWidth": 0.05,
+    "areaPercent": 0.7073553026306459,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.06,
+    "spikeWidth": 0.05,
+    "areaPercent": 1.0610329539459689,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.08,
+    "spikeWidth": 0.05,
+    "areaPercent": 1.4147106052612919,
+    "n": 60,
+    "detected": 1
+  },
+  {
+    "spikeLength": 0.12,
+    "spikeWidth": 0.05,
+    "areaPercent": 2.1220659078919377,
+    "n": 60,
+    "detected": 1
+  }
+]

@@ -1,0 +1,10 @@
+radiusFactor;label;defectScore
+0.8;normal;0
+0.9;normal;0
+0.95;normal;0
+0.98;normal;0
+1;normal;0.0806
+1.02;defect;1
+1.05;defect;1
+1.1;defect;1
+1.2;defect;1

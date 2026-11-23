@@ -1,0 +1,47 @@
+[
+  {
+    "radiusFactor": 0.8,
+    "label": "normal",
+    "defectScore": 0
+  },
+  {
+    "radiusFactor": 0.9,
+    "label": "normal",
+    "defectScore": 0
+  },
+  {
+    "radiusFactor": 0.95,
+    "label": "normal",
+    "defectScore": 0
+  },
+  {
+    "radiusFactor": 0.98,
+    "label": "normal",
+    "defectScore": 0
+  },
+  {
+    "radiusFactor": 1,
+    "label": "normal",
+    "defectScore": 0.08062715828418732
+  },
+  {
+    "radiusFactor": 1.02,
+    "label": "defect",
+    "defectScore": 1
+  },
+  {
+    "radiusFactor": 1.05,
+    "label": "defect",
+    "defectScore": 1
+  },
+  {
+    "radiusFactor": 1.1,
+    "label": "defect",
+    "defectScore": 1
+  },
+  {
+    "radiusFactor": 1.2,
+    "label": "defect",
+    "defectScore": 1
+  }
+]
